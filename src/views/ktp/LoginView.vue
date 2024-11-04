@@ -92,6 +92,9 @@ export default {
                 }
             })
         }
+    },mounted(){
+        this.$token = localStorage.getItem('token')
+        if(this.$token) this.$router.push('/ktpQuery')
     }
 }
 </script>
